@@ -74,7 +74,7 @@ const Navbar = () => {
         <li>
           <Link href='/'>
             <a id='name' title='Home'>
-              Gamestorming
+              TITLE
             </a>
           </Link>{' '}
         </li>
