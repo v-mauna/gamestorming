@@ -12,7 +12,7 @@ const Index = () => (
   body {
     display: flex;
     flex-direction: column;
-    background: white;
+    background: white;c
     color: black;
   }
   }
