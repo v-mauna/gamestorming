@@ -26,8 +26,7 @@ const Home = () => (
           }
           header {
             display: flex;
-            flex-direction: row;
-
+            flex-direction: column;
             background: url(${GS});
             background-size: cover;
             width: 100vw;
@@ -58,29 +57,29 @@ const Home = () => (
           }
 
           .content {
-            position: absolute;
             background: rgba(0, 0, 0, 0.2);
             width: 100vw;
+            display: flex;
+            padding: 0;
+            flex-direction: column;
             height: 600px;
-            justify-content: center;
-            align-content: center;
+            margin: auto;
             text-transform: uppercase;
             text-align: center;
           }
           .content p {
-            margin-top: 20%;
             color: white;
+            margin: auto;
             font-size: 32px;
-            justify-content: center;
-            align-content: center;
             text-transform: uppercase;
-            text-align: center;
-            align-self: center;
             font-family: 'Ubuntu', sans-serif;
           }
           .content a {
             color: white;
             font-size: 12px;
+            width: 100px;
+            margin: auto;
+
             text-decoration: none;
             background: black;
             padding: 12px;
@@ -98,23 +97,22 @@ const Home = () => (
           }
           #about {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             flex-wrap: wrap;
-            position: relative;
             margin: 1em;
+            padding: 1em;
             font-family: 'Oswald', sans-serif;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-bottom: 4em;
           }
-          #about h3{
+          #about h3 {
             margin-left: 3.5em;
+            display: flex;
           }
           #about p {
             width: 50%;
             position: absolute;
-            margin-top: 4em;
-            margin-left: 4em;
+            margin: 4em;
           }
           #about img {
             position: absolute;
@@ -123,27 +121,25 @@ const Home = () => (
             margin-top: 4em;
           }
           #services {
-            position: relative;
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            overflow-wrap: normal;
             width: 100%;
-            margin-top: 4em;
-            margin-bottom: 4em;
+            margin: 1em;
+            padding: 1em;
             text-transform: uppercase;
           }
-          #services p{
-            margin-left:4em;
+          #services p {
+            margin-left: 4em;
             letter-spacing: 2px;
             color: #333;
             width: 50%;
           }
-          #services h3{
+          #services h3 {
+            display: flex;
             margin-left: 3.5em;
             letter-spacing: 2px;
             color: #333;
-
           }
         `}
       </style>
@@ -157,8 +153,11 @@ const Home = () => (
       </Head>
       <header>
         <div className='content'>
-          <p>content</p>
-          <a href='/#about'>Learn More</a>
+          <p>
+            content
+            <br />
+            <a href='/#about'>Learn More</a>
+          </p>
         </div>
       </header>
       <div lang='en'>
