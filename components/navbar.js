@@ -6,11 +6,11 @@ const Navbar = () => {
         {`
         @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap');
         nav {
-            margin-bottom: auto;
-            margin-top: 0;
+            margin-bottom: 0;
             width: 100vw;
             height: 70px;
             display: block;
+            background: black;
           }
           #topNav {
             font-size: 14px;
@@ -19,9 +19,7 @@ const Navbar = () => {
             margin-top: 0;
             width: 100vw;
             padding: 0;
-            color: black;
           }
-
           #name {
             margin: 1em ;
             letter-spacing: 2px;
@@ -50,7 +48,7 @@ const Navbar = () => {
           a {
             text-decoration: none;
             text-transform: uppercase;
-            color:black;
+            color:white;
             font-size: 14px;  
             font-family: 'Oswald',sans-serif;
           }
@@ -64,6 +62,7 @@ const Navbar = () => {
         }
         a:hover{
           color: red;
+          text-decoration: underline;
           transition: 3s ease;
         }
           }
@@ -74,7 +73,7 @@ const Navbar = () => {
         <li>
           <Link href='/'>
             <a id='name' title='Home'>
-              TITLE
+              Gamestorming
             </a>
           </Link>{' '}
         </li>

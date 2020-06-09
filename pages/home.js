@@ -2,7 +2,8 @@ import Head from 'next/head'
 import Storm from './images/storm.jpg'
 import People from './images/people.jpg'
 import Sharpies from './images/sharpies.jpg'
-import Lightbulb from './images/lightbulb.jpg'
+import Characteristics from './images/gsCharacteristics.jpg'
+import Stickies from './images/Stickies.jpg'
 import PostIts2 from './images/post-its2.jpg'
 import PostIts from './images/post-its.jpg'
 import GS from './images/gamestorming3.jpg'
@@ -11,7 +12,7 @@ const Home = () => (
     <div className='container'>
       <style jsx>
         {`
-          @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&family=Sintony&family=Ubuntu:wght@700&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto:wght@100;400&family=Lato&family=Ubuntu:wght@700&display=swap');
           .wrapper {
             display: block;
           }
@@ -22,7 +23,6 @@ const Home = () => (
             font-size: 16px;
             width: 100vw;
             line-height: 2em;
-            font-family: 'Oswald', sans-serif;
           }
           header {
             display: flex;
@@ -40,7 +40,7 @@ const Home = () => (
           }
           @keyframes slide {
             0% {
-              background-image: url(${Storm});
+              background-image: url(${Stickies});
             }
             25% {
               background-image: url(${Sharpies});
@@ -51,13 +51,12 @@ const Home = () => (
             75% {
               background-image: url(${People});
             }
+            100% {
+            background-image: url(${Characteristics});
           }
-          100% {
-            background-image: url(${PostIts2});
-          }
+        }
 
           .content {
-            background: rgba(0, 0, 0, 0.2);
             width: 100vw;
             display: flex;
             padding: 0;
@@ -79,7 +78,6 @@ const Home = () => (
             font-size: 12px;
             width: 100px;
             margin: auto;
-
             text-decoration: none;
             background: black;
             padding: 12px;
@@ -89,34 +87,29 @@ const Home = () => (
             color: white;
             background: red;
           }
-          section {
-            position: relative;
-            width: 100%;
-            color: black;
-            height: 50vh;
-          }
           #about {
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            margin: 1em;
             padding: 1em;
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
+            color: #040f16;
+            height: 50%;
+            font-family: 'Lato', sans-serif;
             letter-spacing: 2px;
+            margin: 4em 1em 0 4em;
           }
           #about h3 {
-            margin-left: 3.5em;
-            display: flex;
+            font-family: 'Roboto',sans-serif;
+            font-weight: 800;
+            text-transform: uppercase;
           }
           #about p {
             width: 50%;
-            position: absolute;
-            margin: 4em;
+            font-family: 'DM Serif Display', serif;
           }
           #about img {
             position: absolute;
-            width: 30%;
+            width: 500px;
             left: 60%;
             margin-top: 4em;
           }
@@ -124,22 +117,22 @@ const Home = () => (
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
-            width: 100%;
-            margin: 1em;
             padding: 1em;
-            text-transform: uppercase;
+            color: #040f16;
+            height: 100%;
+            font-family: 'DM Serif Display', serif;
+            letter-spacing: 2px;
+            margin: 4em;
           }
           #services p {
-            margin-left: 4em;
             letter-spacing: 2px;
-            color: #333;
             width: 50%;
           }
           #services h3 {
-            display: flex;
-            margin-left: 3.5em;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 800;
             letter-spacing: 2px;
-            color: #333;
           }
         `}
       </style>
@@ -160,22 +153,20 @@ const Home = () => (
           </p>
         </div>
       </header>
-      <div lang='en'>
-        <section className='about'>
-          <div id='about'>
-            <h3>About</h3>
-            <img src={Lightbulb} />
-            <p>
-              Ullamco esse id minim mollit pariatur velit fugiat elit dolor
-              veniam elit Lorem tempor enim. Tempor labore irure esse eiusmod
-              sunt sint minim eu. Sunt eiusmod qui et do tempor velit occaecat
-              dolore. Magna sint incididunt ea consectetur eiusmod
-              reprehenderit. Esse excepteur ea ut ullamco culpa excepteur
-              eiusmod Lorem est nulla dolor dolor. Nostrud do voluptate ut
-              fugiat aliqua adipisicing.
-            </p>
-          </div>
-        </section>
+      <div>
+        <div id='about'>
+          <h3>About</h3>
+          <br />
+          <img src='https://live.staticflickr.com/6005/5981296201_8cf6b3facb_c.jpg' />
+          <p>
+            Ullamco esse id minim mollit pariatur velit fugiat elit dolor veniam
+            elit Lorem tempor enim. Tempor labore irure esse eiusmod sunt sint
+            minim eu. Sunt eiusmod qui et do tempor velit occaecat dolore. Magna
+            sint incididunt ea consectetur eiusmod reprehenderit. Esse excepteur
+            ea ut ullamco culpa excepteur eiusmod Lorem est nulla dolor dolor.
+            Nostrud do voluptate ut fugiat aliqua adipisicing.
+          </p>
+        </div>
         <div>
           <div id='services'>
             <h3> Services</h3>
