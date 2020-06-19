@@ -32,7 +32,6 @@ const About = () => (
 					#about h3 {
 						font-family: 'Roboto', sans-serif;
 						font-weight: 800;
-						border-bottom: 1px solid black;
 						text-transform: uppercase;
 					}
 					#about p {

@@ -48,7 +48,6 @@ const Services = () => (
 					font-family: 'Roboto', sans-serif;
                     font-weight: 800;
                     color: white;
-                    border-bottom: 1px solid white;
 					text-transform: uppercase;
 				}
 				#services p {
