@@ -16,7 +16,7 @@ const Home = () => (
 						flex-wrap: wrap;
 						box-sizing: border-box;
 						font-size: 16px;
-						width: 100vw;
+						min-width: 100vw;
 						line-height: 2em;
 					}
 					header {
@@ -81,7 +81,12 @@ const Home = () => (
 
 					#break {
 						height: 20px;
-					}
+          }
+          @media (max-width: 700px){
+            #name{
+              font-size: 32px;
+            }
+          }
 				`}
 			</style>
 			<Head>

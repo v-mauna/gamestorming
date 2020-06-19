@@ -18,7 +18,7 @@ const Navbar = () => {
             display: flex;
             margin-top: 0;
             margin-bottom: 0;
-            width: 100vw;
+            width: auto;
             padding: 0;
           }
           li {

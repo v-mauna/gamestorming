@@ -27,7 +27,7 @@ const About = () => (
 						height: auto;
 						font-family: 'Lato', sans-serif;
 						letter-spacing: 2px;
-						margin: 2em 1em 0 4em;
+						margin: 2em 4em;
 					}
 					#about h3 {
 						font-family: 'Roboto', sans-serif;

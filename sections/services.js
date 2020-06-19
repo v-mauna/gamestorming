@@ -64,7 +64,8 @@ const Services = () => (
 				}
 
 				.images img {
-					width: 282.3px;
+                    width: 282.3px;
+                    height: 172.8px;
 					padding: 1em;
                 }
                 .images img:hover{
@@ -72,6 +73,7 @@ const Services = () => (
                     display: block;
                     padding: 1em;
                   }
+                
 			`}
 		</style>
 			<div id="services">
