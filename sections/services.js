@@ -30,7 +30,7 @@ const Services = () => (
 					font-family: 'Lato', sans-serif;
 					letter-spacing: 2px;
                     margin: 2em 1em 0 4em;
-                    animation: slide-left 2s;
+                    animation: slide-left 4s;
                 }
 
                 @keyframes slide-left{
@@ -45,7 +45,7 @@ const Services = () => (
                     }
                 }
 				#services h3 {
-					font-family: 'Roboto', sans-serif;
+					font-family: 'DM Serif Display',serif;
                     font-weight: 800;
                     color: white;
 					text-transform: uppercase;
@@ -53,8 +53,8 @@ const Services = () => (
 				#services p {
                     width: 100%;
                     color: white;
-					font-weight: 200;
-					font-family: 'Arial', sans-serif;
+					font-weight: 300;
+					font-family: 'Roboto', sans-serif;
 				}
 				.images {
 					display: flex;
@@ -66,7 +66,12 @@ const Services = () => (
 				.images img {
 					width: 282.3px;
 					padding: 1em;
-				}
+                }
+                .images img:hover{
+                    transform: scale(1.5);
+                    display: block;
+                    padding: 1em;
+                  }
 			`}
 		</style>
 			<div id="services">

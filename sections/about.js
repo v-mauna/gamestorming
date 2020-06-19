@@ -60,7 +60,7 @@ const About = () => (
 						other creative people go into a room with a goal, they will come out with more or less creative
 						discoveries and results. Although when we watch them at work, we can observe some combination of
 						sketching, animated conversations, messy desks, and drinking. But the fundamental nature of what
-						happens in that room remains mostly a mystery.
+						happens in that room remains mostly a mystery....
                     </p>
 	
 				</div>

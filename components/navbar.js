@@ -58,6 +58,16 @@ const Navbar = () => {
           justify-content: center;
           text-align: center;
         }
+        li:first-child:hover{
+          background: green;
+          width: 30px;
+          height: 30px;
+          padding: 20px;
+          border-radius: 50%;
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+        }
         li:nth-child(2){
           margin-left: 60px;
         }
@@ -81,6 +91,11 @@ const Navbar = () => {
 				<li>
 					<Link href="/#services">
 						<a title="Services">Services</a>
+					</Link>{' '}
+				</li>
+        <li>
+					<Link href="/games">
+						<a title="Games">Games</a>
 					</Link>{' '}
 				</li>
 				<li>
