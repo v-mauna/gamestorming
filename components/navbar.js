@@ -1,14 +1,14 @@
-import Link from 'next/link'
+import Link from 'next/link';
 const Navbar = () => {
-  return (
-    <nav>
-      <style jsx>
-        {`
+	return (
+		<nav>
+			<style jsx>
+				{`
         @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento&display=swap');
         nav {
             margin-bottom: 0;
             width: 100vw;
-            height: 70px;
+            height: auto;
             display: block;
             background: black;
           }
@@ -17,25 +17,9 @@ const Navbar = () => {
             list-style: none;
             display: flex;
             margin-top: 0;
+            margin-bottom: 0;
             width: 100vw;
             padding: 0;
-          }
-          #name {
-            margin: 1em ;
-            letter-spacing: 2px;
-            font-style: bold;
-            font-family: 'Oswald', sans-serif;
-            text-transform: uppercase;
-            text-align: left;
-            font-size: 18px;
-            font-weight: 800;
-            justify-content: left;
-            align-content: left;
-          }
-          #logo{
-              height: 90px;
-              padding-right: 50vw;
-
           }
           li {
             margin: 1em;
@@ -61,46 +45,52 @@ const Navbar = () => {
             transition .3s;
         }
         a:hover{
-          color: red;
           text-decoration: underline;
           transition: 3s ease;
         }
+        li:first-child{
+          background: red;
+          width: 30px;
+          height: 30px;
+          padding: 20px;
+          border-radius: 50%;
+          align-content: center;
+          justify-content: center;
+          text-align: center;
+        }
+        li:nth-child(2){
+          margin-left: 60px;
+        }
           }
         `}
-      </style>
+			</style>
 
-      <ul id='topNav'>
-        <li>
-          <Link href='/'>
-            <a id='name' title='Home'>
-              Gamestorming
-            </a>
-          </Link>{' '}
-        </li>
-        <li>
-          <Link href='/about'>
-            <a title='Who We Are'>
-              Who We Are
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href='/publications'>
-            <a title='Services'>
-              Services
-            </a>
-          </Link>{' '}
-        </li>
-        <li>
-          <Link href='/contact'>
-            <a title='Contact'>
-              Contact
-            </a>
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  )
-}
+			<ul id="topNav">
+				<li>
+					<Link href="/">
+						<a title="Home">
+							Gamestorming
+						</a>
+					</Link>{' '}
+				</li>
+				<li>
+					<Link href="/#about">
+						<a title="Who We Are">Who We Are</a>
+					</Link>
+				</li>
+				<li>
+					<Link href="/#services">
+						<a title="Services">Services</a>
+					</Link>{' '}
+				</li>
+				<li>
+					<Link href="/contact">
+						<a title="Contact">Contact</a>
+					</Link>
+				</li>
+			</ul>
+		</nav>
+	);
+};
 
-export default Navbar
+export default Navbar;
